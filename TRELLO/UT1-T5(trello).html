@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="maximum-scale=1,width=device-width, initial-scale=1.0">
+  <title>Prueba Trello</title>
+  <link rel="stylesheet" href="archivo.css">
+</head>
+
+<body>
+
+  <div class="overlay hidden">
+    <div class="content">
+      <button id="botonCancelar">X</button>
+      <h2>Crear tarjeta</h2>
+      <input type="titulo" id="cardName" placeholder="Título">
+      <input id="descripcion" placeholder="Descripción"></input>
+      <input id="assignedTo" placeholder="Asignado a"></input>
+      <input id="startDate" placeholder="Fecha de inicio"></input>
+      <input id="endDate" placeholder="Fecha de fin"></input>
+      <input id="status" placeholder="Estado"></input>
+      <input id="priority" placeholder="Prioridad"></input>
+      <input type="array" id="comments" placeholder="Comentarios"></input>
+      <button id="saveCard">Guardar</button>
+    </div>
+  </div>
+
+  <div class="cabecera">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/1280px-Trello_logo.svg.pnglogo_trello.png" width="80">
+    <select name="Workspaces" id="a">
+      <option>Workspaces</option>
+      <option>Espacio de trabajo de Trello</option>
+    </select>
+    <select name="Recent" id="b">
+      <option>Recent</option>
+    </select>
+    <select name="Starred" id="c">
+      <option>Starred</option>
+    </select>
+    <select name="Templates" id="d">
+      <option>Templates</option>
+    </select>
+    <button>Create</button>
+    <div class = "contenedor-derecha">
+      <input placeholder="🔎 Buscar" type="text">
+      <button>Notificaciones</button>
+      <button>👤</button>
+    </div>
+  </div>
+
+  <div class="barra">
+    <span class="text">Web Development</span>
+    <button>Button</button>
+    <select name="opciones" id="opciones">
+      <option value="board">Board</option>
+      <option value="table">Table</option>
+      <option value="calendar">Calendar</option>
+      <option value="timeline">Timeline</option>
+      <option value="dashboard">Dashboard</option>
+      <option value="map">Map</option>
+    </select>
+  </div>
+
+  <div>
+    <ul>
+      <li class="bloque">
+        <h3>Things to do</h3>
+        <div class="tarjetas">
+        </div>
+        <button id = "addCard1">+ Add new card</button>
+      </li>
+      <li class="bloque">
+        <h3>In Progress</h3>
+        <div class="tarjetas">
+        </div>
+        <button id="addCard2">+ Add new card</button>
+      </li>
+      <li class="bloque">
+        <h3>Done</h3>
+        <div class="tarjetas">
+        </div>
+        <button id="addCard3">+ Add new card</button>
+      </li>
+      <li class="bloqueAddList">
+        <button id="addList">+ Add another list</button>
+      </li>
+    </ul>
+  </div>
+
+  <script src="archivo.js"></script>
+</body>
+</html>

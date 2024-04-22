@@ -1,0 +1,247 @@
+body {
+    background-image: url('https://i.pinimg.com/564x/9e/45/c4/9e45c4d9c3a0f9d5e5ec71e8b657c9f3.jpg');
+    background-size: auto; /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: repeat; /* Repite la imagen en todas las direcciones */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+
+.cabecera {
+    display: flex;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.cabecera button,
+.cabecera select {
+    margin-right: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 10px solid #ffffff;
+}
+
+.contenedor-derecha{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.barra {
+    display: flex;
+    color: #fff;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.barra .text {
+    margin-right: 10px;
+    color: #000000;
+}
+
+.barra button,
+.barra select {
+    margin-right: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.bloque {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 10px;
+    margin-right: 12px;
+    width: 250px;
+}
+.bloque button{
+    background-color:  #ffffff;
+    border: 3px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bloque .tarjetas button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el boton */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bloque .tarjetas button:hover {
+    border: 1px solid #466dee;
+}
+
+.card-button{
+    background-color: #466dee;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bloqueAddList  {
+    background-color: #ffffff; /* Fondo blanco */
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    cursor: pointer;
+    width: 150px;
+    height: 100%;
+}
+
+.bloqueAddList button {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 100%;
+    }
+
+.overlay { 
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .content { /* Estilo para el contenido del modal */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar el contenido */
+    z-index: 11;
+    width: 500px;
+    height: 350px;
+  }
+  
+  #botonCancelar {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  #saveCard {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+  }
+
+.content input {
+    width: 300px; /* Ajusta el ancho de los inputs */
+    padding: 5px; /* Añade relleno alrededor del texto en los inputs */
+    margin: 5px; /* Añade un espacio vertical entre los inputs */
+    border: 2px solid #000000;
+    display: block; /* Muestra los inputs en líneas separadas */
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Media query para dispositivos con ancho máximo de 600px (formato móvil) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    }
+
+    .cabecera {
+        flex-direction: column; /* Cambiar la dirección del flexbox para la cabecera */
+        align-items: center; /* Centrar los elementos de la cabecera */
+    }
+
+    .cabecera img {
+        margin-bottom: 10px; /* Añadir un espacio entre el logo y los selectores */
+    }
+
+    .contenedor-derecha {
+        flex-direction: column; /* Cambiar la dirección del flexbox para el contenedor derecho */
+        align-items: center; /* Centrar los elementos del contenedor derecho */
+    }
+
+    .barra {
+        flex-direction: column; /* Cambiar la dirección del flexbox para los ítems */
+    }
+
+    .bloque {
+        width: 90%; /* Reducir el ancho de los bloques para dispositivos móviles */
+        margin: 0 auto; /* Centrar los bloques */
+        margin-bottom: 20px; /* Agregar espacio entre bloques */
+    }
+
+    ul {
+        flex-direction: column; /* Apilar los elementos de la lista verticalmente */
+        align-items: center; /* Centrar los elementos de la lista */
+    }
+
+    .card-button {
+        width: 100%; /* Ajustar el ancho de los botones al 100% */
+    }
+
+    .content {
+        width: 90%; /* Reducir el ancho del contenido */
+        left: 5%; /* Centrar horizontalmente */
+    }
+
+    .overlay {
+        align-items: flex-start; /* Alinear el contenido al inicio */
+    }
+
+    .bloqueAddList {
+        width: 90%; /* Reducir el ancho de los bloques para dispositivos móviles */
+        margin: 0 auto; /* Centrar los bloques */
+        margin-bottom: 20px; /* Agregar espacio entre bloques */
+    }
+
+    .bloqueAddList button {
+        width: 100%; /* Ajustar el ancho de los botones al 100% */
+    }
+}
