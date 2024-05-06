@@ -1,0 +1,21 @@
+
+  .botonMayor {
+    align-content: center;
+    background-color: green;
+  }
+  
+  .botonMenor {
+    align-content: center;
+    background-color: red;
+  }
+  
+  .botonIgual{
+    align-content: center;
+    background-color: blue;
+  }
+  
+  .botonReiniciar{
+    align-content: center;
+    background-color: yellow;
+  }
+
